@@ -9,6 +9,15 @@ on:
     branches: 
       - main
 
+  schedule:
+    - cron: '0 0 * * *'
+
+  release:
+    types:
+      - published
+      - created
+      - prereleased
+
 
 jobs:
   deploy:
